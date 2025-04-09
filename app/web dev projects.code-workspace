@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Users/user/Desktop/web dev projects"
+		},
+		{
+			"path": "../../../../Users/user/OneDrive/Desktop/web dev project"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web dev project"
+	}
+}
