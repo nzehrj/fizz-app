@@ -10,7 +10,7 @@ import { getAllCategories } from '@/lib/actions/product.actions'
 export default async function Header() {
   const categories = await getAllCategories()
   return (
-    <header className='bg-black  text-white'>
+    <header className='#F0EEEB #13181B'>
       <div className='px-2'>
         <div className='flex items-center justify-between'>
           <div className='flex items-center'>
@@ -36,7 +36,7 @@ export default async function Header() {
           <Search />
         </div>
       </div>
-      <div className='flex items-center px-3 mb-[1px]  bg-gray-800'>
+      <div className='flex items-center px-3 mb-[1px]  #EEECE7'>
         <Sidebar categories={categories} />
         <div className='flex items-center flex-wrap gap-3 overflow-hidden   max-h-[42px]'>
           {data.headerMenus.map((menu) => (
