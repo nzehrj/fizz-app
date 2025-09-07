@@ -162,6 +162,13 @@ const Email = z.string().min(1, 'Email is required').email('Email is invalid')
 const Password = z.string().min(3, 'Password must be at least 3 characters')
 const UserRole = z.string().min(1, 'role is required')
 
+export const UserUpdateSchema = z.object({
+  _id: MongoId,
+  name: UserName,
+  email: Email,
+  role: UserRole,
+})
+
 export const UserInputSchema = z.object({
   name: UserName,
   email: Email,
@@ -196,4 +203,16 @@ export const UserSignUpSchema = UserSignInSchema.extend({
 
 export const UserNameSchema = z.object({
   name: UserName,
+})
+
+// WEBPAGE
+export const WebPageInputSchema = z.object({
+  title: z.string().min(1, "Title is required"),
+  slug: z.string().min(1, "Slug is required"),
+  content: z.string().min(1, "Content is required"),
+  isPublished: z.boolean().default(false),
+});
+
+export const WebPageUpdateSchema = WebPageInputSchema.extend({
+  _id: z.string().min(1, "ID is required"),
 })
