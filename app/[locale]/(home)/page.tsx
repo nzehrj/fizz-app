@@ -71,7 +71,7 @@ export default async function HomePage() {
   return (
     <>
       <HomeCarousel items={carousels} />
-      <div className='md:p-4 md:space-y-4 bg-border'>
+      <div className='px-2 md:px-4 lg:px-8 xl:px-10 md:p-4 md:space-y-4 bg-border'>
         <HomeCard cards={cards} />
         <Card className='w-full rounded-none'>
           <CardContent className='p-4 items-center gap-3'>

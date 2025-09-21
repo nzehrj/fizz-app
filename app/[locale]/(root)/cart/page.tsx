@@ -35,7 +35,7 @@ export default function CartPage() {
   const t = useTranslations()
   return (
     <div>
-      <div className='grid grid-cols-1 md:grid-cols-4  md:gap-4'>
+      <div className='px-2 md:px-4 lg:px-8 xl:px-10 grid grid-cols-1 md:grid-cols-4  md:gap-4'>
         {items.length === 0 ? (
           <Card className='col-span-4 rounded-none'>
             <CardHeader className='text-3xl  '>

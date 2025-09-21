@@ -43,7 +43,7 @@ export default function OrderDetailsForm({
   } = order
 
   return (
-    <div className='grid md:grid-cols-3 md:gap-5'>
+    <div className='px-2 md:px-4 lg:px-8 xl:px-10 grid md:grid-cols-3 md:gap-5'>
       <div className='overflow-x-auto md:col-span-2 space-y-4'>
         <Card>
           <CardContent className='p-4 gap-4'>

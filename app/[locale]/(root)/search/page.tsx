@@ -120,7 +120,7 @@ export default async function SearchPage(props: {
   const t = await getTranslations()
   return (
     <div>
-      <div className='my-2 bg-card md:border-b  flex-between flex-col md:flex-row '>
+      <div className='px-2 md:px-4 lg:px-8 xl:px-10 my-2 bg-card md:border-b  flex-between flex-col md:flex-row '>
         <div className='flex items-center'>
           {data.totalProducts === 0
             ? t('Search.No')

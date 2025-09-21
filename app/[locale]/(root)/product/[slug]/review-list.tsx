@@ -149,7 +149,7 @@ export default function ReviewList({
     setOpen(true)
   }
   return (
-    <div className='space-y-2'>
+    <div className='px-2 md:px-4 lg:px-8 xl:px-10 space-y-2'>
       {reviews.length === 0 && <div>{t('No reviews yet')}</div>}
 
       <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>

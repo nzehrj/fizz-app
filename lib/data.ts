@@ -1254,9 +1254,9 @@ const data: Data = {
         pageSize: 9,
       },
       site: {
-        name: 'FizzApp',
+        name: 'NxtAmzn',
         description:
-          'FizzApp is a sample Ecommerce website built with Next.js, Tailwind CSS, and MongoDB.',
+          'Fizzapp is a sample Ecommerce website built with Next.js, Tailwind CSS, and MongoDB.',
         keywords: 'Next Ecommerce, Next.js, Tailwind CSS, MongoDB',
         url: 'https://next-mongo-ecommerce-final.vercel.app',
         logo: '/icons/logo.svg',
@@ -1290,7 +1290,9 @@ const data: Data = {
       availableLanguages: i18n.locales.map((locale) => ({
         code: locale.code,
         name: locale.name,
-      })),
+      })).concat([
+        { code: 'pcm', name: 'Nigerian Pidgin English' },
+      ]),
       defaultLanguage: 'en-US',
       availableCurrencies: [
         {
@@ -1301,6 +1303,7 @@ const data: Data = {
         },
         { name: 'Euro', code: 'EUR', symbol: '€', convertRate: 0.96 },
         { name: 'UAE Dirham', code: 'AED', symbol: 'AED', convertRate: 3.67 },
+        { name: 'Nigerian Naira', code: 'NGN', symbol: '₦', convertRate: 1600 },
       ],
       defaultCurrency: 'USD',
       availablePaymentMethods: [
@@ -1332,6 +1335,7 @@ const data: Data = {
       defaultDeliveryDate: 'Next 5 Days',
     },
   ],
+
 }
 
 export default data

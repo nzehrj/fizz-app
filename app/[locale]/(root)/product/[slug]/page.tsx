@@ -60,7 +60,7 @@ export default async function ProductDetails(props: {
     <div>
       <AddToBrowsingHistory id={product._id} category={product.category} />
       <section>
-        <div className='grid grid-cols-1 md:grid-cols-5  '>
+        <div className='px-2 md:px-4 lg:px-8 xl:px-10 grid grid-cols-1 md:grid-cols-5  '>
           <div className='col-span-2'>
             <ProductGallery images={product.images} />
           </div>
@@ -153,13 +153,13 @@ export default async function ProductDetails(props: {
           </div>
         </div>
       </section>
-      <section className='mt-10'>
+      <section className='px-2 md:px-4 lg:px-8 xl:px-10 mt-10'>
         <h2 className='h2-bold mb-2' id='reviews'>
           {t('Product.Customer Reviews')}
         </h2>
         <ReviewList product={product} userId={session?.user.id} />
       </section>
-      <section className='mt-10'>
+      <section className='px-2 md:px-4 lg:px-8 xl:px-10 mt-10'>
         <ProductSlider
           products={relatedProducts.data}
           title={t('Product.Best Sellers in', { name: product.category })}

@@ -34,10 +34,10 @@ export default function Footer() {
           <ChevronUp className='mr-2 h-4 w-4' />
           {t('Footer.Back to top')}
         </Button>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 p-6 max-w-7xl mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 p-6 max-w-7xl mx-auto px-2 md:px-4 lg:px-8 xl:px-10'>
           <div>
-            <h3 className='font-bold mb-2'>{t('Footer.Get to Know Us')}</h3>
-            <ul className='space-y-2'>
+            <h3 className='font-bold mb-5'>{t('Footer.Get to Know Us')}</h3>
+            <ul className='space-y-3'>
               <li>
                 <Link href='/page/careers'>{t('Footer.Careers')}</Link>
               </li>
@@ -52,8 +52,8 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className='font-bold mb-2'>{t('Footer.Make Money with Us')}</h3>
-            <ul className='space-y-2'>
+            <h3 className='font-bold mb-5'>{t('Footer.Make Money with Us')}</h3>
+            <ul className='space-y-3'>
               <li>
                 <Link href='/page/sell'>
                   {t('Footer.Sell products on', { name: site.name })}
@@ -72,8 +72,8 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className='font-bold mb-2'>{t('Footer.Let Us Help You')}</h3>
-            <ul className='space-y-2'>
+            <h3 className='font-bold mb-5'>{t('Footer.Let Us Help You')}</h3>
+            <ul className='space-y-3'>
               <li>
                 <Link href='/page/shipping'>
                   {t('Footer.Shipping Rates & Policies')}
@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
         <div className='border-t border-gray-800'>
           <div className='max-w-7xl mx-auto py-8 px-4 flex flex-col items-center space-y-4'>
-            <div className='flex items-center space-x-4 flex-wrap md:flex-nowrap'>
+            <div className='flex items-center gap-4 space-x-4 flex-wrap md:flex-nowrap'>
               <Image
                 src='/icons/logo.svg'
                 alt={`${site.name} logo`}
