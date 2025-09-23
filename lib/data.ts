@@ -1254,7 +1254,7 @@ const data: Data = {
         pageSize: 9,
       },
       site: {
-        name: 'NxtAmzn',
+        name: 'FizzApp',
         description:
           'Fizzapp is a sample Ecommerce website built with Next.js, Tailwind CSS, and MongoDB.',
         keywords: 'Next Ecommerce, Next.js, Tailwind CSS, MongoDB',

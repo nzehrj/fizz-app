@@ -92,8 +92,8 @@ const ProductList = () => {
                 placeholder='Filter name...'
               />
 
-              {isPending ? (
-                <p>Loading...</p>
+             {isPending ? (
+                <p>Fizz App loading...</p>
               ) : (
                 <p>
                   {data?.totalProducts === 0

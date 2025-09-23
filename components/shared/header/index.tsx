@@ -28,12 +28,15 @@ export default async function Header() {
               href='/'
               className='flex items-center header-button font-extrabold text-2xl m-1'
             >
-              <Image
-                src={site.logo}
-                width={40}
-                height={40}
-                alt={`${site.name} logo`}
-              />
+              {/* Fix for empty logo src */}
+              {site.logo && site.logo.trim() !== '' && (
+                <Image
+                  src={site.logo}
+                  width={40}
+                  height={40}
+                  alt={`${site.name} logo`}
+                />
+              )}
               {site.name}
             </Link>
           </div>
