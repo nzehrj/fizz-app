@@ -35,7 +35,7 @@ export default function AddToCart({
 
   return minimal ? (
     <Button
-      className='rounded-full w-auto'
+      className='rounded-md w-auto'
       onClick={() => {
         try {
           addItem(item, 1)
@@ -82,7 +82,7 @@ export default function AddToCart({
       </Select>
 
       <Button
-        className='rounded-full w-full'
+        className='rounded-md w-full'
         type='button'
         onClick={async () => {
           try {
@@ -111,7 +111,7 @@ export default function AddToCart({
             })
           }
         }}
-        className='w-full rounded-full '
+        className='w-full rounded-md '
       >
         {t('Product.Buy Now')}
       </Button>

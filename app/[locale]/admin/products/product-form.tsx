@@ -278,8 +278,8 @@ const ProductForm = ({
                             src={image}
                             alt='product image'
                             className='w-36 h-36 object-cover object-center rounded-sm'
-                            width={100}
-                            height={100}
+                            width={70}
+                            height={70}
                           />
                           <Button
                             variant={'destructive'}

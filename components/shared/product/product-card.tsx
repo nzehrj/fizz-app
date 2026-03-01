@@ -38,7 +38,7 @@ const ProductCard = ({
               alt={product.name}
               fill
               sizes='80vw'
-              className='object-contain'
+              className='object-contain h-32'
             />
           </div>
         )}
@@ -46,11 +46,11 @@ const ProductCard = ({
     </Link>
   )
   const ProductDetails = () => (
-    <div className='flex-1 space-y-2'>
-      <p className='font-bold'>{product.brand}</p>
+    <div className='flex-1 space-y-1'>
+      <p className='font-bold text-xs'>{product.brand}</p>
       <Link
         href={`/product/${product.slug}`}
-        className='overflow-hidden text-ellipsis'
+        className='overflow-hidden text-ellipsis text-xs block leading-tight'
         style={{
           display: '-webkit-box',
           WebkitLineClamp: 2,
@@ -59,9 +59,9 @@ const ProductCard = ({
       >
         {product.name}
       </Link>
-      <div className='flex gap-2 justify-center'>
-        <Rating rating={product.avgRating} />
-        <span>({formatNumber(product.numReviews)})</span>
+      <div className='flex gap-1 justify-center items-center'>
+        <Rating rating={product.avgRating} size={3} />
+        <span className='text-xs'>({formatNumber(product.numReviews)})</span>
       </div>
 
       <ProductPrice
@@ -99,24 +99,28 @@ const ProductCard = ({
       <ProductImage />
       {!hideDetails && (
         <>
-          <div className='p-3 flex-1 text-center'>
+          <div className='p-2 flex-1 text-center'>
             <ProductDetails />
           </div>
-          {!hideAddToCart && <AddButton />}
+          {!hideAddToCart && (
+            <div className='px-2 pb-2'>
+              <AddButton />
+            </div>
+          )}
         </>
       )}
     </div>
   ) : (
-    <Card className='flex flex-col  '>
-      <CardHeader className='p-3'>
+    <Card className='flex flex-col'>
+      <CardHeader className='p-2'>
         <ProductImage />
       </CardHeader>
       {!hideDetails && (
         <>
-          <CardContent className='p-3 flex-1  text-center'>
+          <CardContent className='p-2 py-1 flex-1 text-center'>
             <ProductDetails />
           </CardContent>
-          <CardFooter className='p-3'>
+          <CardFooter className='p-2 pt-0'>
             {!hideAddToCart && <AddButton />}
           </CardFooter>
         </>

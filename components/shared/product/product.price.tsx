@@ -48,7 +48,7 @@ const ProductPrice = ({
   ) : isDeal ? (
     <div className='space-y-2'>
       <div className='flex justify-center items-center gap-2'>
-        <span className='bg-red-700 rounded-sm p-1 text-white text-sm font-semibold'>
+        <span className='bg-red-700 rounded-sm p-1 text-white text-xs font-light'>
           {discountPercent}% {t('Product.Off')}
         </span>
         <span className='text-red-700 text-xs font-bold'>
@@ -58,7 +58,7 @@ const ProductPrice = ({
       <div
         className={`flex ${forListing && 'justify-center'} items-center gap-2`}
       >
-        <div className={cn('text-3xl', className)}>
+        <div className={cn('text-xl', className)}>
           <span className='text-xs align-super'>{currency.symbol}</span>
           {intValue}
           <span className='text-xs align-super'>{floatValue}</span>
